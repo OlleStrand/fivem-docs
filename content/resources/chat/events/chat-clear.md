@@ -29,8 +29,8 @@ end, false)
 ##### C\# Example:
 ```csharp
 // In a method or the class constructor
-RegisterCommand("clear", new Action<int, List<object>, string>(source, args, raw) =>
+RegisterCommand("clear", new Action<int, List<object>, string>((source, args, raw) =>
 {
-    TriggerEvent("chat:clear")
-}, false);
+    TriggerEvent("chat:clear");
+}), false);
 ```
