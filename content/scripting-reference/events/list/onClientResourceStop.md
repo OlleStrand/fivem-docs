@@ -28,7 +28,7 @@ end)
 ##### C\# Example:
 ```csharp
 // In class constructor
-Eventhandlers["onClientResourceStop"] += new Action<string>(OnClientResourceStop);
+EventHandlers["onClientResourceStop"] += new Action<string>(OnClientResourceStop);
 
 // Delegate method
 private void OnClientResourceStop(string resourceName)
